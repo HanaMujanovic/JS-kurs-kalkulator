@@ -1,33 +1,33 @@
-let broj1=10;
-let broj2=5;
+let currentResult = 0;
 
-function sabiranje (broj1, broj2){
-    let rezultatSabiranja = broj1+broj2;
-    console.log(rezultatSabiranja);
+addBtn.addEventListener("click", add)
+
+function add(){
+let calculationDescription = currentResult + " + "+ userInput.value;
+currentResult = currentResult+parseInt(userInput.value);
+outputResult(currentResult, calculationDescription);
 }
 
-function oduzimanje (broj1, broj2){
-    let rezultatOduzimanja = broj1+broj2;
-    console.log(rezultatOduzimanja);
+subtractBtn.addEventListener("click", subtract)
+
+function subtract(){
+let calculationDescription = currentResult + " - "+ userInput.value;
+currentResult = currentResult - parseInt(userInput.value);
+outputResult(currentResult, calculationDescription);
 }
 
-function dijeljenje (broj1, broj2){
-    let rezultatDijeljenja = broj1+broj2;
-     console.log( rezultatDijeljenja);
+multiplyBtn.addEventListener("click", multiply)
+
+function multiply(){
+let calculationDescription = currentResult + " * "+ userInput.value;
+currentResult = currentResult * parseInt(userInput.value);
+outputResult(currentResult, calculationDescription);
 }
 
-function mnozenje (broj1, broj2){
-    let rezultatMnozenja = broj1+broj2;
-     console.log(rezultatMnozenja);
+divideBtn.addEventListener("click", divide)
+
+function divide(){
+let calculationDescription = currentResult + " / "+ userInput.value;
+currentResult = currentResult / parseInt(userInput.value);
+outputResult(currentResult, calculationDescription);
 }
-
-let zbir=sabiranje(broj1,broj2);
-let razlika=oduzimanje(broj1,broj2);
-let kolicnik=dijeljenje(broj1,broj2);
-let proizvod=mnozenje(broj1,broj2);
-
-console.log(zbir);
-console.log(razlika);
-console.log(kolicnik);
-console.log(proizvod);
-
